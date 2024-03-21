@@ -1,0 +1,26 @@
+ /* basic */
+ @import url(basic/basic.css);
+
+ /* components */
+ @import url(component/btn-vip.css);
+ @import url(component/box3-pro.css);
+ @import url(component/btn-premary.css);
+ @import url(component/form.css);
+
+ /* pages */
+@import url(pages/home.css);
+@import url(pages/about-us.css );
+@import url(pages/menu.css);
+@import url(pages/shope-style1.css);
+@import url(pages/blog.css);
+@import url(pages/blog-btn.css);
+@import url(pages/contact-us.css);
+
+/* layout */
+@import url(layout/layout.css);
+
+/* vendor*/
+ @import url(vendor/vendor.css);
+
+ /* responsive*/
+ @import url(responsive/responsiv.css);

@@ -1,0 +1,146 @@
+/* start style header */
+.head {
+    background-color: transparent;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.headadd {
+    position: fixed;
+    top:-60px;
+    right: 0;
+    left: 0;
+    transform: translateY(60px);
+    transition: transform .5s;
+    background-color: #7da640;
+}
+
+.head .navbar {
+    padding: 10px 0;
+}
+
+.head .navbar .navbar-nav .nav-item .active {
+    color: #7da640;
+}
+
+.head .navbar .navbar-nav .nav-item .nav-link {
+    padding: 20px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.head .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #7da640;
+}
+
+.head .navbar .extranav {
+    padding-left: 60px;
+}
+
+.head .navbar .extranav .btn {
+    padding: 0;
+    background-color: aliceblue;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    outline: none;
+    border: 0;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.head .navbar .extranav .icon .linka {
+    margin-left: 5px;
+}
+
+.head .navbar .extranav .icon .link-after {
+    position: relative;
+}
+
+.head .navbar .extranav .icon .btna::after {
+    content: "6";
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    background: #666666;
+    border-radius: 10px;
+}
+
+/* end style header */
+
+
+/* swich icon */
+.swich {
+    box-shadow: 7px 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 99;
+    position: fixed;
+}
+
+.swich a {
+    background: #7da640;
+    box-shadow: 2px 1px 60px rgba(0, 0, 0, 0.10);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 21px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    width: 45px;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+.swich .tr {
+    animation: animat 2s infinite linear;
+}
+
+@keyframes animat {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* swich icon */
+/* btn-right */
+.btn-right {
+    position: absolute;
+    position: fixed;
+    right: -38px;
+    top: 200px;
+    z-index: 99;
+    transform: rotate(90deg);
+}
+
+.btn-right .btn-primary {
+    background: #fe9f10;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+    border: none;
+}
+
+/* btn-right */

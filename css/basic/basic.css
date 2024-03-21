@@ -1,0 +1,53 @@
+/* font */
+@import url(../basic/fontes.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: unset;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+ul{
+    padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    background-color: #7da640;
+    color: #fff;
+}
+m-b{
+    margin-bottom: 30px;
+}
+h5{
+    font-family: pop;
+    font-size: 20px;
+}
+p{
+    font-family: pop200;
+}

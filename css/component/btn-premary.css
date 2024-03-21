@@ -1,0 +1,58 @@
+/* btn */
+.btn-premary{
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    color: #fff;
+    background-color: #7DA640;
+    border:1px solid #7DA640;
+    position: relative;
+    transition: all .5s;
+}
+.btn-premary span{
+    text-transform: capitalize;
+    display: block;
+    transition: all .5s;
+    position: relative;
+    z-index: 99;
+}
+.btn-premary::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    height: 0%;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all .5s;
+}
+.btn-premary:hover::after{
+    width: 100%;
+    height: 100%;
+    border:1px solid #7DA640;
+
+}
+@keyframes btn-sapnstart{
+    100% {
+        transform: translate3d(0, -105%, 0) scale3d(1, 2, 1);
+        opacity: 0;
+    }
+}
+@keyframes btn-sapnend{
+    0% {
+        transform: translate3d(0, 100%, 0) scale3d(1, 2, 1);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.btn-premary:hover span{
+    color: #7DA640;
+    animation: btn-sapnstart 0.3s forwards,
+     btn-sapnend 0.3s forwards 0.3s;
+}
+/* btn */

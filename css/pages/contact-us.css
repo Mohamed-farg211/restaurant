@@ -1,0 +1,219 @@
+.box16 {
+    background-color: rgba(34, 34, 34, 0.04);
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 270px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px    ;
+}
+
+.box16 .card-box16 {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    margin-top: -47px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+}
+.box16 .card-box16::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    height: 0%;
+    background-color: #7DA640;
+    border-radius: 30px;
+    z-index: -1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.box16 .card-box16:hover::after{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.box16 .card-box16:hover .contact {
+    color: #fff;
+}
+/* icon */
+.box16 .card-box16 .icon {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width: 115px;
+    height: 115px;
+    line-height: 115px;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+}
+
+.box16 .card-box16 .icon .icon-cell {
+    border-radius: 100%;
+    box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+    background-color: #fff;
+    color: #7DA640;
+}
+
+.box16 .card-box16 .icon .icon-cell .fa-solid {
+    font-size: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+    transition: all 0.5s;
+}
+
+.box16 .card-box16:hover .icon .icon-cell .fa-solid {
+    animation: sh 1s;
+}
+
+@keyframes sh {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/* icon */
+
+.box16 .card-box16 .contact {
+    padding: 38px 40px 54px;
+    transition: all .5s;
+}
+
+.box16 .card-box16 .contact h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+/* icon */
+
+/* title */
+.box16 .box16-title{
+    text-align: center;
+    padding-top: 30px;
+}
+.box16 .box16-title h2{
+    font-size: 60px;
+    /* line-height: 30px; */
+    font-family: lop;
+}
+/* title */
+
+/* form */
+.box16 label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7DA640;
+    margin-bottom: 10px;
+}
+
+.box16 .input::before{
+    background-color: black;
+}
+.box16 .input::after{
+    background-color: black;
+}
+/* form */
+/* btn */
+.box16 .btn-premary{
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    color: #fff;
+    background-color: #7DA640;
+    border:1px solid #7DA640;
+    position: relative;
+    transition: all .5s;
+}
+.box16 .btn-premary span{
+    text-transform: capitalize;
+    display: block;
+    transition: all .5s;
+    position: relative;
+    z-index: 99;
+}
+.box16 .btn-premary::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    height: 0%;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all .5s;
+}
+.box16 .btn-premary:hover::after{
+    width: 100%;
+    height: 100%;
+    border:1px solid #7DA640;
+
+}
+@keyframes btn-sapnstart{
+    100% {
+        transform: translate3d(0, -105%, 0) scale3d(1, 2, 1);
+        opacity: 0;
+    }
+}
+@keyframes btn-sapnend{
+    0% {
+        transform: translate3d(0, 100%, 0) scale3d(1, 2, 1);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.box16 .btn-premary:hover span{
+    color: #7DA640;
+    animation: btn-sapnstart 0.3s forwards,
+     btn-sapnend 0.3s forwards 0.3s;
+}
+/* btn */

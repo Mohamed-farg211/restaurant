@@ -1,0 +1,145 @@
+/* box1-for about */
+.box6{
+    height: 450px;
+}
+.box6 .box6-title h1{
+    font-size: 60px;
+    line-height: 60px;
+    color:#fff;
+    font-family: lop;
+    text-transform: capitalize;
+}
+/* btn */
+.box6 .nav{
+    text-align: center  ;
+}
+.box6 .nav .nav-item{
+    background-color: #7DA640;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    margin: 0;
+    border-radius: 10px;
+    padding: 13px 30px;
+    color: #fff ;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.box6 .nav .nav-item .fa-solid{
+    padding: 0 10px;
+}
+/* btn */
+/* box1-for about */
+
+
+/* box10 */
+.box10 {
+    padding: 60px 0;
+}
+.box10 .box10-text{
+    text-align: center;
+}
+.box10 .box10-text .title{
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    color:#000000;
+    font-family: lop;
+    text-transform: capitalize;
+}
+.box10 .box10-text p{
+    margin: auto;
+    font-size: 16px;
+    color: #666;
+    width: 65%;
+    margin-top: 30px;
+}
+.box10 .box10-cardimg{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.box10 .box10-cardimg img{
+    display: inline-block;
+    border-radius: 10px;
+}
+.box10 .box10-cardimg .video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    background-color: #7DA640;
+    width: 90px;
+    height: 90px;
+    line-height: 87px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+}
+.box10 .box10-cardimg .video:hover{
+    transform:translate(-50%,-50%) scale(1.1);
+}
+
+/* box10 */
+/* box11 */
+.box11{
+    padding: 60px 0;
+}
+.box11 .box11-text{
+    text-align: center;
+}
+.box11 .box11-text h2 {
+    font-size: 60px;
+    line-height: 20px;
+    font-family: lop;
+    padding: 40px 0;
+}
+/* card */
+.box11 .box11-card{
+    text-align: center; 
+    background-color: #fff ;
+    border-radius: 10px;
+    background: rgba(34, 34, 34, 0.05);
+    text-align: center;
+    padding: 30px 12px;
+    border: 2px solid transparent;
+    height: 100%;
+    transition: all 0.5s;
+}
+.box11 .box11-card:hover{
+    box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+    background-color: #fff;
+    border: 2px solid #7DA640;
+    transform: translateY(-10px);
+}
+.box11 .box11-card .icon-card{
+    width: 92px;
+    height: 92px;
+    border-radius: 100%;
+    background-color: #7DA640;
+    color: #fff;
+    margin-bottom: 30px;
+    margin:0 auto 30px ;
+}
+.box11 .box11-card .icon-card .icon-card-p{
+    text-align: center;
+    line-height: 90px;
+    font-size: 50px;
+}
+.box11 .box11-card .title-card h5{
+    color: #222;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+.box11 .box11-card .title-card h5:hover{
+    color: #7DA640;
+}
+.box11 .box11-card .title-card p{
+    color: #666;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+}
+/* card */
+/* box11 */
